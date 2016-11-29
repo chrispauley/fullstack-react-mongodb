@@ -11,6 +11,7 @@
   "author": "Chris Pauley <pauleyc@yahoo.com>",
   "license": "MIT",
   "dependencies": {
+    "ejs": "2.5.3",
     "express": "4.14.0",
     "mongodb": "2.2.12",
     "react": "15.4.1",
