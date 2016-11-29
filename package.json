@@ -1,0 +1,31 @@
+{
+  "name": "fulljs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node server.js --ignore public/",
+    "dev": "webpack -wd"
+  },
+  "keywords": [],
+  "author": "Chris Pauley <pauleyc@yahoo.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "4.14.0",
+    "mongodb": "2.2.12",
+    "react": "15.4.1",
+    "react-dom": "15.4.1"
+  },
+  "devDependencies": {
+    "babel-cli": "6.18.0",
+    "babel-eslint": "7.1.1",
+    "babel-loader": "6.2.8",
+    "babel-preset-es2015": "6.18.0",
+    "babel-preset-react": "6.16.0",
+    "babel-preset-stage-2": "6.18.0",
+    "eslint": "3.11.1",
+    "eslint-plugin-react": "6.7.1",
+    "nodemon": "1.11.0",
+    "webpack": "1.13.3"
+  }
+}
