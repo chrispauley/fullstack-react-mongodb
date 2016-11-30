@@ -11,6 +11,7 @@
   "author": "Chris Pauley <pauleyc@yahoo.com>",
   "license": "MIT",
   "dependencies": {
+    "axios": "0.15.3",
     "ejs": "2.5.3",
     "express": "4.14.0",
     "json-loader": "0.5.4",

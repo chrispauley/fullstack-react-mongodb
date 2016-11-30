@@ -4,27 +4,28 @@ import ContestPreview from './ContestPreview';
 
 class App extends React.Component {
     state = {
-        pageHeader: 'Naming Contests'
+        pageHeader: 'Naming Contests',
+        contests: this.props.initialContests
     };
     componentDidMount() {
-      console.log('did mount');
     }
     componentWillUnmount() {
-      console.log('will unmount');
+        console.log('will unmount');
     }
     render() {
         return (
             <div className="App">
                 <Header message={this.state.pageHeader}/>
                 <div>
-                  { this.props.contests.map(contest =>
-                     <ContestPreview {...contest}/>
-                  )}
+                    {this.state.contests.map(contest => <ContestPreview key={contest.id} {...contest}/>)}
                 </div>
             </div>
         );
     }
 }
 
+App.propTypes = {
+  initialContests: React.PropTypes.array
+};
 
 export default App;
